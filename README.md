@@ -97,7 +97,26 @@ yarn dev
 Open your browser and navigate to:
 http://localhost:3000
 
+---
+
 ## 🖼️ Images
+### Home
+![home](https://github.com/user-attachments/assets/1da3f308-e511-44ee-9357-c87a17404a1b)
+
+### Companions
+![companions](https://github.com/user-attachments/assets/d454206f-0699-4e56-b4db-c1fe892d8403)
+
+### Profile
+![my-journey](https://github.com/user-attachments/assets/443aabf9-f8fb-41d1-af93-8799c2a8c2d3)
+
+### Session
+![session](https://github.com/user-attachments/assets/9c156a87-880e-466f-92db-d81b0608f888)
+
+### Add New Companion
+![new-companion-form](https://github.com/user-attachments/assets/8e8f3387-e421-4be1-b0f1-7c2a103be07d)
+
+### Pricing Plans
+![subscription](https://github.com/user-attachments/assets/9a2f86ce-20d8-47fb-8dc4-9dc400ed052b)
 
 
 #### Credit: Thanks to JSMastery
