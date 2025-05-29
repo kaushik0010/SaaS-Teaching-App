@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 SaaS Teaching App
 
-## Getting Started
+A powerful, scalable SaaS platform that empowers users to create and interact with AI-powered voice tutors. Built with a modern tech stack for high performance, elegant UI, and seamless user experience.
 
-First, run the development server:
+---
 
+## 📑 Table of Contents
+
+- [🚀 Introduction](#-introduction)  
+- [🛠 Tech Stack](#-tech-stack)  
+- [✨ Features](#-features)  
+- [⚡ Quick Start](#-quick-start)  
+- [🖼 Images](#-images)  
+
+---
+
+## 🚀 Introduction
+
+The **SaaS Teaching App** is designed to revolutionize the way users interact with educational content. With AI-driven voice agents, robust authentication, flexible subscription models, and seamless database integration, this application is ideal for educators, learners, and businesses alike.
+
+Whether you're building your own virtual tutor or simply browsing session history, this app offers a modern and intelligent teaching experience — accessible on any device.
+
+---
+
+## 🛠 Tech Stack
+
+- **[Next.js](https://nextjs.org/)** – React framework for building fast, scalable web apps  
+- **[Vapi](https://vapi.ai/)** – Voice API integration for AI agents  
+- **[Clerk](https://clerk.dev/)** – User authentication and session management  
+- **[Sentry](https://sentry.io/)** – Error tracking and performance monitoring  
+- **[Supabase](https://supabase.com/)** – Open-source backend for real-time data and authentication  
+- **[shadcn/ui](https://ui.shadcn.dev/)** – Beautiful, customizable UI components  
+- **[TailwindCSS](https://tailwindcss.com/)** – Utility-first CSS framework  
+- **[TypeScript](https://www.typescriptlang.org/)** – Static typing for JavaScript  
+
+---
+
+## ✨ Features
+
+- 🎙 **AI Voice Agents** – Interact with intelligent voice tutors in real-time  
+- 🔐 **Authentication** – Secure sign-in/sign-up using Clerk  
+- 💳 **Billing & Subscription** – Seamless payment handling and user plans  
+- 🔖 **Bookmarks & Session History** – Save and revisit past tutoring sessions  
+- ♻️ **Code Reusability** – Modular design using components and shared logic  
+- 👨‍🏫 **Create a Tutor** – Customize and launch your own AI-powered tutor  
+- 📱 **Cross-Device Compatibility** – Use on mobile, tablet, or desktop  
+- 🧠 **Database Integration** – Real-time data handling with Supabase  
+- 📈 **Scalable Tech Stack** – Built to grow with your user base  
+- 🔍 **Search Functionality** – Quickly find tutors, sessions, or topics  
+
+---
+
+## ⚡ Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kaushik0010/SaaS-Teaching-App.git
+cd saas-teaching-app
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Set Environment Variables
+Create a .env.local file and include the required environment variables:
+```bash
+# Sentry
+SENTRY_AUTH_TOKEN=
+
+# Vapi
+NEXT_PUBLIC_VAPI_WEB_TOKEN=
+
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+### 4. Run the App
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🖼️ Images
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Credit: Thanks to JSMastery
