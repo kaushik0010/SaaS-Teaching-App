@@ -12,18 +12,25 @@ const navItems = [
     {label: 'My Journey', href: '/my-journey'},
 ]
 
-const NavItems = () => {
+const NavItems = ({ mobile = false }: { mobile?: boolean }) => {
   const pathname = usePathname();
 
   return (
-    <nav className='flex items-center gap-4'>
+    <nav className={mobile ? 'flex flex-col gap-1' : 'flex items-center gap-4'}>
       {navItems.map(({ label, href }) => (
         <Link 
-        href={href} 
-        key={label} 
-        className={cn(pathname === href && 'text-primary font-semibold')}
+          href={href} 
+          key={label} 
+          className={cn(
+            'block px-4 py-3 rounded-md transition-colors',
+            pathname === href 
+              ? 'bg-primary/10 text-primary font-semibold' 
+              : 'hover:bg-gray-100 dark:hover:bg-gray-800',
+            mobile ? 'text-lg' : ''
+          )}
+          onClick={() => mobile && (document.activeElement as HTMLElement)?.blur()}
         >
-            {label}
+          {label}
         </Link>
       ))}
     </nav>
